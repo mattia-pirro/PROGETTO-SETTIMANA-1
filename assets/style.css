@@ -99,10 +99,17 @@ main section:first-of-type {
     margin-top: -81px;
 }
 
-h2,
-h3 {
+h2 {
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 2rem;
+    color: hsl(220, 60%, 25%);
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.5rem;
     color: hsl(220, 60%, 25%);
     text-align: left;
     margin-bottom: 6px;
@@ -356,19 +363,71 @@ button:hover {
     font-size: 16px;
 }
 
-.project {
-    margin-top: 12px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+#progetti {
+    background-color: #ffffff;
 }
 
-.project:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 16);
+.project {
+    margin-top: 18px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 12px;
+    color: hsl(220, 60%, 30%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    color: hsl(220, 60%, 45%);
+    border-bottom: 3px solid hsl(45, 90%, 50%);
 }
 
 .project:nth-of-type(odd) {
-    background-color: #fffff4;
+    background-color: #F9F5EA;
+    border-left: 6px solid hsl(220, 60%, 30%);
+    border-radius: 8px;
 }
 
 .project:nth-of-type(even) {
-    background-color: #f6f6f6;
+    background-color: #ffffff;
+    border-left: 6px solid hsl(45, 90%, 50%);
+    border-radius: 8px;
+}
+
+.project:first-of-type h3::after {
+    content: "NEW";
+    display: inline-block;
+    padding: 2px 8px;
+    margin-left: 12px;
+    background-color: #F44A4A;
+    color: #ffffff;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+#link-container {
+    text-align: right;
+    margin-top: 24px;
+}
+
+#link-progetti {
+    color: hsl(220, 60%, 30%);
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 3px solid hsl(45, 90%, 50%);
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+#link-progetti:hover {
+    color: hsl(220, 60%, 45%);
+}
+
+caption{
+    font-style: italic;
 }
