@@ -118,11 +118,12 @@ main section h2::before {
 #chiSono {
     background-color: #ffffff;
     text-align: justify;
+    height: 330px;
 }
 
 #chiSono .avatar {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     border: 5px solid hsl(45, 90%, 60%);
     border-radius: 50%;
     float: left;
@@ -131,10 +132,10 @@ main section h2::before {
 
 #chiSono #primo-paragrafo::first-letter {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: bold;
     font-style: normal;
-    line-height: 0.9;
+    line-height: 1.2;
     float: left;
     margin-right: 6px;
     color: hsl(220, 60%, 30%);
@@ -151,7 +152,7 @@ main section h2::before {
 
 #competenze table {
     border-collapse: collapse;
-    margin-top: 12px;
+    margin-top: 16px;
     padding: 0;
 }
 
@@ -220,6 +221,141 @@ main section h2::before {
     width: 20%;
 }
 
+#esperienze {
+    background-color: #ffffff;
+    clear: both;
+}
+
+#esperienze caption {
+    color: hsl(220, 30%, 40%);
+    text-align: left;
+}
+
+#esperienze table {
+    border-collapse: collapse;
+    margin-top: 16px;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+
+#esperienze th {
+    color: hsl(220, 60%, 30%);
+    background-color: #F9F5EA;
+    padding: 12px 6px 12px 6px;
+    border-bottom: 1px solid #ece6d8;
+    width: 30%;
+}
+
+#esperienze td {
+    border-bottom: 1px solid #ece6d8;
+    padding: 12px 6px 12px 6px;
+}
+
+#contattami {
+    background-color: #ffffff;
+}
+
+#contattami p {
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+label {
+    font-weight: bold;
+    color: #1F3D7A;
+}
+
+input,
+textarea,
+select {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    width: 100%;
+    padding: 12px 6px 12px 12px;
+    border-radius: 4px;
+    background-color: #FBF8F1;
+    font-size: 1.05rem;
+    border: 1px solid #d6cfbf;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-style: italic;
+    color: #a39b87;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: white;
+    border-color: hsl(220, 60%, 30%);
+}
+
+#consenso {
+    color: #2b2b2b;
+    font-weight: normal;
+    margin-left: 4px;
+}
+
+#recontact {
+    width: 4%;
+}
+
+button {
+    color: white;
+    font-size: 16px;
+    background-color: hsl(220, 60%, 30%);
+    font-weight: bold;
+    width: 15%;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: hsl(220, 60%, 45%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+#site-footer {
+    background-color: hsl(220, 40%, 15%);
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-align: center;
+    height: 160px;
+}
+
+#icons-container {
+    padding-top: 36px;
+}
+
+.icone {
+    display: inline-block;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.08);
+    margin-left: 12px;
+}
+
+.icone:hover {
+    color: hsl(220, 60%, 20%);
+    background-color: hsl(45, 90%, 60%);
+}
+
+.icone i {
+    margin: auto;
+    padding: 12px;
+    font-size: 24px;
+}
+
+#site-footer p {
+    padding-top: 16px;
+    color: #aaafb7;
+    font-size: 16px;
+}
+
 .project {
     margin-top: 12px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
@@ -229,66 +365,10 @@ main section h2::before {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 16);
 }
 
-label {
-    font-weight: bold;
-    color: #1F3D7A;
-}
-
-input,
-textarea {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    width: 60%;
-    background-color: #ffffff;
-    font-size: 1.05rem;
-}
-
-input::placeholder,
-textarea::placeholder {
-    color: #999999;
-    font-style: italic;
-}
-
-#recontact {
-    width: 3%;
-}
-
-button {
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(220, 60%, 30%);
-    font-weight: bold;
-    width: 30%;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-button:hover {
-    color: hsl(60, 100%, 75%);
-    background-color: hsl(220, 60%, 45%);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
 .project:nth-of-type(odd) {
     background-color: #fffff4;
 }
 
 .project:nth-of-type(even) {
     background-color: #f6f6f6;
-}
-
-#esperienze p {
-    margin-bottom: 12px;
-}
-
-#site-footer {
-    background-color: #172136;
-    color: #ffffff;
-    font-size: 0.9rem;
-    text-align: center;
-    height: 150px;
-}
-
-#site-footer p {
-    padding-top: 70px;
 }

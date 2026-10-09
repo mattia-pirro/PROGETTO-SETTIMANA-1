@@ -120,7 +120,7 @@
                 </tbody>
             </table>
         </section>
-        <!--<section id="esperienze">
+        <section id="esperienze">
             <h2>Esperienze</h2>
             <p>Un riepilogo del mio percorso formativo e lavorativo recente.</p>
             <table>
@@ -139,14 +139,14 @@
                         <td>Epicode</td>
                     </tr>
                     <tr>
-                        <td>2024 - 2025</td>
-                        <td>Libraio</td>
-                        <td>Libreria Centrale, Milano</td>
+                        <td>2022 - 2026</td>
+                        <td>Tecnico R&D</td>
+                        <td>N.E.T. s.r.l, Pregnana Milanese</td>
                     </tr>
                     <tr>
-                        <td>2018 - 2022</td>
-                        <td>Studente di Lettere</td>
-                        <td>Università degli Studi di Milano</td>
+                        <td>2016 - 2021</td>
+                        <td>Studente di Informatica</td>
+                        <td>ITIS S. Cannizzaro, Rho</td>
                     </tr>
                 </tbody>
             </table>
@@ -167,23 +167,29 @@
                 </p>
                 <a href="javascript:void(0)" target="blank">Vedi su GitHub</a>
             </article>
+            <article class="project">
+                <h3>Card di presentazione</h3>
+                <p>Un biglietto digitale con nome, ruolo e link ai social. Esercizio di sintesi sulla struttura HTML.
+                </p>
+                <a href="javascript:void(0)" target="blank">Vedi su GitHub</a>
+            </article>
         </section>
         <section id="contattami">
-            <form action="#" method="POST">
+            <form action="#">
                 <h2>Contattami</h2>
-                <p>Compila il form per scrivermi. Ti rispondo entro 24 ore.</p>
-                <label for="nome">Nome:</label>
+                <p>Compila il form per scrivermi. Rispondo entro 24 ore nei giorni lavorativi.</p>
+                <label for="nome">Nome</label>
                 <br />
                 <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
                 <br /><br />
-                <label for="email">Email:</label>
+                <label for="email">Email</label>
                 <br />
                 <input type="email" id="email" name="email" placeholder="tu@esempio.it" required>
                 <br /><br />
-                <label for="menù">Motivo del contatto:</label>
+                <label for="menù">Motivo del contatto</label>
                 <br />
                 <select id="menù" name="menù">
-                    <option value="Lavoro">Lavoro</option>
+                    <option value="Lavoro">Proposta di lavoro</option>
                     <option value="Domanda">Domanda</option>
                     <option value="collaborazione">Collaborazione</option>
                     <option value="altro">Altro</option>
@@ -193,21 +199,33 @@
                 <br />
                 <input type="date" id="data" name="data">
                 <br /><br />
-                <label for="messaggio">Messaggio:</label>
+                <label for="messaggio">Messaggio</label>
                 <br />
                 <textarea id="messaggio" name="messaggio" placeholder="Scrivi qui il tuo messaggio" rows="5"
                     required></textarea>
                 <br /><br />
                 <input type="checkbox" id="recontact" name="recontact" required>
-                <label for="recontact">Accetto di essere ricontattato all'indirizzo indicato</label>
+                <label id="consenso" for="recontact">Accetto di essere ricontattato all'indirizzo indicato</label>
                 <br /><br />
-                <button type="submit">Invia</button>
+                <button type="submit"><i class="fa-solid fa-paper-plane"></i>Invia</button>
             </form>
-        </section>-->
+        </section>
     </main>
     <footer id="site-footer">
-        <div>
-            <p>© 2026 Mario Rossi</p>
+        <div id="icons-container">
+            <div class="icone">
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="icone">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="icone">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="icone">
+                <i class="fa-solid fa-globe"></i>
+            </div>
+            <p>© 2026 Mattia Pirrò - Costruito a mano durante la prima settimana del corso Epicode</p>
         </div>
     </footer>
 </body>
