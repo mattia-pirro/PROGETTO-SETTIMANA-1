@@ -122,10 +122,10 @@ main section h2::before {
     margin-right: 8px;
 }
 
-#chiSono {
+#chiSono, .scheda-progetto {
     background-color: #ffffff;
     text-align: justify;
-    height: 330px;
+    height: 40%;
 }
 
 #chiSono .avatar {
@@ -194,7 +194,7 @@ main section h2::before {
 }
 
 #competenze table .contenitore {
-    width: 400px;
+    width: 100%;
     height: 10px;
     border-radius: 10px;
     background-color: #ece6d8;
@@ -373,7 +373,7 @@ button:hover {
     padding: 20px;
 }
 
-.project a {
+.project a{
     display: inline-block;
     margin-top: 12px;
     color: hsl(220, 60%, 30%);
@@ -430,4 +430,19 @@ button:hover {
 
 caption{
     font-style: italic;
+}
+
+.scheda-progetto p{
+    margin-bottom: 16px;
+}
+
+.scheda-progetto .git-link{
+    color: hsl(220, 60%, 30%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.scheda-progetto .git-link:hover{
+    color: hsl(220, 60%, 45%);
+    border-bottom: 3px solid hsl(45, 90%, 50%);
 }
