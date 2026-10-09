@@ -1,5 +1,9 @@
+/* Import */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* * */
 
 *,
 *::before,
@@ -8,6 +12,8 @@
     margin: 0;
     padding: 0;
 }
+
+/* Body */
 
 body {
     font-family: 'Inter', Arial, sans-serif;
@@ -18,6 +24,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* Header */
 
 #site-header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/header-bg.webp");
@@ -45,6 +53,8 @@ body {
 #site-header p {
     margin-top: 16px;
 }
+
+/* Nav */
 
 #site-header nav {
     margin-top: 32px;
@@ -80,6 +90,8 @@ i {
     background-color: hsl(45, 90%, 60%);
     border-color: hsl(45, 90%, 60%);
 }
+
+/* Main */
 
 main {
     max-width: 920px;
@@ -122,7 +134,10 @@ main section h2::before {
     margin-right: 8px;
 }
 
-#chiSono, .scheda-progetto {
+/* ChiSono */
+
+#chiSono,
+.scheda-progetto {
     background-color: #ffffff;
     text-align: justify;
     height: 40%;
@@ -152,6 +167,8 @@ main section h2::before {
     margin-top: 12px;
 }
 
+/* Competenze */
+
 #competenze {
     background-color: #ffffff;
     clear: both;
@@ -163,9 +180,10 @@ main section h2::before {
     padding: 0;
 }
 
-#competenze caption {
+caption {
     color: hsl(220, 30%, 40%);
     text-align: left;
+    font-style: italic;
 }
 
 #competenze th {
@@ -228,6 +246,8 @@ main section h2::before {
     width: 20%;
 }
 
+/* Esperienze */
+
 #esperienze {
     background-color: #ffffff;
     clear: both;
@@ -258,6 +278,75 @@ main section h2::before {
     border-bottom: 1px solid #ece6d8;
     padding: 12px 6px 12px 6px;
 }
+
+/* Progetti */
+
+#progetti {
+    background-color: #ffffff;
+}
+
+.project {
+    margin-top: 18px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 12px;
+    color: hsl(220, 60%, 30%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    color: hsl(220, 60%, 45%);
+    border-bottom: 3px solid hsl(45, 90%, 50%);
+}
+
+.project:nth-of-type(odd) {
+    background-color: #F9F5EA;
+    border-left: 6px solid hsl(220, 60%, 30%);
+    border-radius: 8px;
+}
+
+.project:nth-of-type(even) {
+    background-color: #ffffff;
+    border-left: 6px solid hsl(45, 90%, 50%);
+    border-radius: 8px;
+}
+
+.project:first-of-type h3::after {
+    content: "NEW";
+    display: inline-block;
+    padding: 2px 8px;
+    margin-left: 12px;
+    background-color: #F44A4A;
+    color: #ffffff;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+#link-container {
+    text-align: right;
+    margin-top: 24px;
+}
+
+#link-progetti {
+    color: hsl(220, 60%, 30%);
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 3px solid hsl(45, 90%, 50%);
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+#link-progetti:hover {
+    color: hsl(220, 60%, 45%);
+}
+
+/* Contattami */
 
 #contattami {
     background-color: #ffffff;
@@ -325,6 +414,8 @@ button:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
 }
 
+/* Footer */
+
 #site-footer {
     background-color: hsl(220, 40%, 15%);
     color: #ffffff;
@@ -363,86 +454,19 @@ button:hover {
     font-size: 16px;
 }
 
-#progetti {
-    background-color: #ffffff;
-}
+/* Pagina progetti */
 
-.project {
-    margin-top: 18px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    padding: 20px;
-}
-
-.project a{
-    display: inline-block;
-    margin-top: 12px;
-    color: hsl(220, 60%, 30%);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.project a:hover {
-    color: hsl(220, 60%, 45%);
-    border-bottom: 3px solid hsl(45, 90%, 50%);
-}
-
-.project:nth-of-type(odd) {
-    background-color: #F9F5EA;
-    border-left: 6px solid hsl(220, 60%, 30%);
-    border-radius: 8px;
-}
-
-.project:nth-of-type(even) {
-    background-color: #ffffff;
-    border-left: 6px solid hsl(45, 90%, 50%);
-    border-radius: 8px;
-}
-
-.project:first-of-type h3::after {
-    content: "NEW";
-    display: inline-block;
-    padding: 2px 8px;
-    margin-left: 12px;
-    background-color: #F44A4A;
-    color: #ffffff;
-    font-size: 0.75rem;
-    border-radius: 3px;
-    vertical-align: middle;
-}
-
-#link-container {
-    text-align: right;
-    margin-top: 24px;
-}
-
-#link-progetti {
-    color: hsl(220, 60%, 30%);
-    text-decoration: none;
-    padding-bottom: 2px;
-    border-bottom: 3px solid hsl(45, 90%, 50%);
-    border-radius: 2px;
-    font-weight: bold;
-}
-
-#link-progetti:hover {
-    color: hsl(220, 60%, 45%);
-}
-
-caption{
-    font-style: italic;
-}
-
-.scheda-progetto p{
+.scheda-progetto p {
     margin-bottom: 16px;
 }
 
-.scheda-progetto .git-link{
+.scheda-progetto .git-link {
     color: hsl(220, 60%, 30%);
     text-decoration: none;
     font-weight: bold;
 }
 
-.scheda-progetto .git-link:hover{
+.scheda-progetto .git-link:hover {
     color: hsl(220, 60%, 45%);
     border-bottom: 3px solid hsl(45, 90%, 50%);
 }
