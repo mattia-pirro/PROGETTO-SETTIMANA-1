@@ -328,6 +328,18 @@ caption {
     vertical-align: middle;
 }
 
+.project:last-of-type h3::after {
+    content: "NEW";
+    display: inline-block;
+    padding: 2px 8px;
+    margin-left: 12px;
+    background-color: #F44A4A;
+    color: #ffffff;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
 #link-container {
     text-align: right;
     margin-top: 24px;
@@ -452,6 +464,20 @@ button:hover {
     padding-top: 16px;
     color: #aaafb7;
     font-size: 16px;
+}
+
+#site-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#site-footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#site-footer a:hover {
+    color: hsl(220, 60%, 20%);
 }
 
 /* Pagina progetti */
