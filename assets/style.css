@@ -186,7 +186,7 @@ caption {
     font-style: italic;
 }
 
-#competenze th{
+#competenze th {
     color: hsl(220, 60%, 30%);
     text-align: left;
     background-color: #F9F5EA;
@@ -416,11 +416,11 @@ button:hover {
 
 /* TornaSu */
 
-#button-container{
+#button-container {
     text-align: center;
 }
 
-#torna-su{
+#torna-su {
     display: inline-block;
     color: white;
     font-size: 18px;
@@ -436,7 +436,7 @@ button:hover {
     margin-top: 12px;
 }
 
-#torna-su:hover{
+#torna-su:hover {
     background-color: hsl(220, 60%, 45%);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
 }
