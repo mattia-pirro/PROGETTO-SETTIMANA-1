@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* * */
+/* Box-sizing */
 
 *,
 *::before,
@@ -186,11 +186,11 @@ caption {
     font-style: italic;
 }
 
-#competenze th {
+#competenze th{
     color: hsl(220, 60%, 30%);
     text-align: left;
     background-color: #F9F5EA;
-    padding: 12px 6px 12px 6px;
+    padding: 12px 6px 12px 12px;
     border-bottom: 1px solid #ece6d8;
     width: 50%;
 }
@@ -316,18 +316,6 @@ caption {
     border-radius: 8px;
 }
 
-.project:first-of-type h3::after {
-    content: "NEW";
-    display: inline-block;
-    padding: 2px 8px;
-    margin-left: 12px;
-    background-color: #F44A4A;
-    color: #ffffff;
-    font-size: 0.75rem;
-    border-radius: 3px;
-    vertical-align: middle;
-}
-
 .project:last-of-type h3::after {
     content: "NEW";
     display: inline-block;
@@ -426,6 +414,33 @@ button:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
 }
 
+/* TornaSu */
+
+#button-container{
+    text-align: center;
+}
+
+#torna-su{
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    background-color: hsl(220, 60%, 30%);
+    font-weight: bold;
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 12px;
+}
+
+#torna-su:hover{
+    background-color: hsl(220, 60%, 45%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
 /* Footer */
 
 #site-footer {
@@ -495,4 +510,16 @@ button:hover {
 .scheda-progetto .git-link:hover {
     color: hsl(220, 60%, 45%);
     border-bottom: 3px solid hsl(45, 90%, 50%);
+}
+
+.scheda-progetto:last-of-type h2::after {
+    content: "NEW";
+    display: inline-block;
+    padding: 2px 8px;
+    margin-left: 12px;
+    background-color: #F44A4A;
+    color: #ffffff;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    vertical-align: middle;
 }
